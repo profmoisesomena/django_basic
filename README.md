@@ -1,1 +1,1 @@
-# map_temp
+# Django Basic
