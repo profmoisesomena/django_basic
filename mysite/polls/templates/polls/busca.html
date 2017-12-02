@@ -1,0 +1,16 @@
+ <!-- search form -->
+ <form class="navbar-form navbar-right" action="." method="get">
+    <input id="search_box" name="search_box" type="text" placeholder="Search..." class="form-control">
+    <button type="submit" class="btn btn-success form-control"><span class="glyphicon glyphicon-search"></span></button>
+    <img src=""/>
+</form>
+
+<h1>All Question</h1>
+{% for band in latest_question_list %}
+    <ul class="list-group">
+      <li class="list-group-item">
+        <h4><a href="/polls/{{ question.id }}/">{{ band.question_text }}</a></h4>
+      </li>
+    </ul>
+{% endfor %}
+
